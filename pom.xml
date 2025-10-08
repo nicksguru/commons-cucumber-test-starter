@@ -5,14 +5,14 @@
     <parent>
         <groupId>guru.nicks.commons</groupId>
         <artifactId>parent</artifactId>
-        <version>0.1.0-alpha.4</version>
+        <version>0.1.0-alpha.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <!-- groupId is redundant (inherited from parent), but required by Maven Central -->
     <groupId>guru.nicks.commons</groupId>
     <artifactId>cucumber-test-starter</artifactId>
-    <version>0.1.0-alpha.4</version>
+    <version>0.1.0-alpha.1</version>
 
     <name>Cucumber Test Starter</name>
     <description>Starter for running tests with Cucumber</description>
@@ -108,12 +108,12 @@
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-
-        <!-- @Builder, @Slf4j, etc. -->
+         <!-- @Builder, @Slf4j, etc. -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
