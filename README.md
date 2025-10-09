@@ -1,5 +1,7 @@
 # Cucumber Test Starter
 
+Starter for running tests with Cucumber.
+
 ## Usage
 
 Pick the most recent version from
