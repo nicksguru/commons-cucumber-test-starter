@@ -10,9 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- groupId is redundant (inherited from parent), but required by Maven Central -->
-    <groupId>${project.parent.groupId}</groupId>
+    <groupId>guru.nicks.commons</groupId>
     <artifactId>cucumber-test-starter</artifactId>
-    <version>${project.parent.version}</version>
+    <version>${guru.nicks.commons.version}</version>
 
     <name>Cucumber Test Starter</name>
     <description>Starter for running tests with Cucumber</description>
