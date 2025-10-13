@@ -5,7 +5,7 @@
     <parent>
         <groupId>guru.nicks.commons</groupId>
         <artifactId>parent</artifactId>
-        <version>0.1.0-alpha.25</version><!-- [BVM] -->
+        <version>1.0.0-rc.1</version><!-- [BVM] -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,7 +16,7 @@
 
     <name>Nicks.Guru Cucumber Test Starter</name>
     <description>Starter for running tests with Cucumber</description>
-    <url>https://nicks.guru</url>
+    <url>https://github.com/nicksguru/commons-bom</url>
 
     <licenses>
         <license>
@@ -25,20 +25,22 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
     <developers>
         <developer>
             <name>Nick S.</name>
             <email>job-offers@nicks.guru</email>
-            <organizationUrl>https://nicks.guru</organizationUrl>
+            <url>https://nicks.guru</url>
         </developer>
     </developers>
-
     <scm>
-        <connection>https://nicks.guru</connection>
-        <developerConnection>https://nicks.guru</developerConnection>
-        <url>https://nicks.guru</url>
+        <connection>scm:git:git://github.com/nicksguru/commons-cucumber-test-starter.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/nicksguru/commons-cucumber-test-starter.git</developerConnection>
+        <url>https://github.com/nicksguru/commons-cucumber-test-starter</url>
     </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/nicksguru/commons-cucumber-test-starter/issues</url>
+    </issueManagement>
 
     <dependencies>
         <dependency>
@@ -113,7 +115,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
-         <!-- @Builder, @Slf4j, etc. -->
+        <!-- @Builder, @Slf4j, etc. -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
