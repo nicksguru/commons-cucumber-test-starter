@@ -16,7 +16,7 @@
 
     <name>Nicks.Guru Cucumber Test Starter</name>
     <description>Starter for running tests with Cucumber</description>
-    <url>https://github.com/nicksguru/commons-bom</url>
+    <url>https://github.com/nicksguru/commons-cucumber-test-starter</url>
 
     <licenses>
         <license>
