@@ -65,8 +65,20 @@ public class TextCommonSteps {
                 .isNull();
     }
 
+    /**
+     * If the argument is blank, checks that there's NO exception, which is convenient for scenario outline tables.
+     *
+     * @see #theExceptionShouldBeOfType(String)
+     */
     @Then("the exception message should contain {string}")
     public void theExceptionMessageShouldContain(String substring) {
+        if (StringUtils.isBlank(substring)) {
+            assertThat(textWorld.getLastException())
+                    .as("lastException")
+                    .isNull();
+            return;
+        }
+
         assertThat(textWorld.getLastException())
                 .as("lastException")
                 .isNotNull();
@@ -81,11 +93,19 @@ public class TextCommonSteps {
     }
 
     /**
-     * Checks {@link Class#getSimpleName()} of {@link TextWorld#getLastException()}.
+     * Checks {@link Class#getSimpleName()} of {@link TextWorld#getLastException()}. If the argument is blank, checks
+     * that there's NO exception, which is convenient for scenario outline tables.
      */
     @Then("the exception should be of type {string}")
     public void theExceptionShouldBeOfType(String classNameWithoutPackage) {
         Throwable exception = textWorld.getLastException();
+
+        if (StringUtils.isBlank(classNameWithoutPackage)) {
+            assertThat(exception)
+                    .as("lastException")
+                    .isNull();
+            return;
+        }
 
         assertThat(exception)
                 .as("lastException")
