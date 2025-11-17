@@ -1,6 +1,6 @@
-package guru.nicks.cucumber;
+package guru.nicks.commons.cucumber;
 
-import guru.nicks.cucumber.world.NumberWorld;
+import guru.nicks.commons.cucumber.world.NumberWorld;
 
 import io.cucumber.java.en.Given;
 import jakarta.annotation.Nullable;

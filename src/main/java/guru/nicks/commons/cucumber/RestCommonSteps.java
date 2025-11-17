@@ -1,6 +1,6 @@
-package guru.nicks.cucumber;
+package guru.nicks.commons.cucumber;
 
-import guru.nicks.cucumber.world.RestWorld;
+import guru.nicks.commons.cucumber.world.RestWorld;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

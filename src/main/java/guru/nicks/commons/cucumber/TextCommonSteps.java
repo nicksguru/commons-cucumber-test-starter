@@ -1,6 +1,6 @@
-package guru.nicks.cucumber;
+package guru.nicks.commons.cucumber;
 
-import guru.nicks.cucumber.world.TextWorld;
+import guru.nicks.commons.cucumber.world.TextWorld;
 
 import io.cucumber.java.ParameterType;
 import io.cucumber.java.en.And;
@@ -126,7 +126,7 @@ public class TextCommonSteps {
     }
 
     /**
-     * {@code guru.nicks.exception.http.UnauthorizedException} class is not available in this module, therefore the
+     * {@code guru.nicks.commons.exception.http.UnauthorizedException} class is not available in this module, therefore the
      * exception is checked by the aforementioned class name.
      */
     @Then("UnauthorizedException should be thrown")
@@ -137,7 +137,7 @@ public class TextCommonSteps {
 
         assertThat(textWorld.getLastException().getClass().getName())
                 .as("lastException")
-                .isEqualTo("guru.nicks.exception.http.UnauthorizedException");
+                .isEqualTo("guru.nicks.commons.exception.http.UnauthorizedException");
     }
 
     @Then("IllegalArgumentException should be thrown")
