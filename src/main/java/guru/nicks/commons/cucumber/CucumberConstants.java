@@ -1,4 +1,4 @@
-package guru.nicks.commons.cucumber.world;
+package guru.nicks.commons.cucumber;
 
 import lombok.experimental.UtilityClass;
 import org.junit.platform.suite.api.IncludeEngines;
